@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Générateur d'Excuses</title>
+
+    <!--    Feuille de style-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <h1>Générateur d'Excuses bidons</h1>
+
+    <form id="excuseForm">
+        <label for="themeSelect">Choisissez une thématique :</label>
+        <select id="themeSelect" name="theme">
+            <option value="retard">Retard</option>
+            <option value="devoir">Devoir non fait</option>
+            <option value="reveil">Panne de réveil</option>
+            <option value="flemme">Flemme</option>
+            <option value="oubli">Oubli</option>
+        </select>
+
+        <button id="btnGenerateExcuse" type="button">Générer Excuse</button>
+    </form>
+
+    <div id="excuseDisplay" class="hidden">
+        <p>L'excuse apparaîtra ici.</p>
+    </div>
+
+    <!--    Chargement des excuses  -->
+    <script src="assets/js/excuses.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
